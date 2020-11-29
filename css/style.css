@@ -1056,7 +1056,7 @@ body span {
   padding: 1em;
   font-family: 'Quicksand', 'Vollkorn', serif;
   font-weight: 300;
-  color: #fff;
+  color: #000;
   margin: 0;
 }
 @media (max-width: 768px) {
