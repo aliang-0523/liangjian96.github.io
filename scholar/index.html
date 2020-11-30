@@ -63,12 +63,12 @@
       lazyload: {
         enable: true,
         only_post: 'false',
-        loading: 'http://216284w73d.iok.la:31580/loading.gif'
+        loading: '/images/loading.gif'
       },
       donate: {
         enable: true,
-        alipay: 'http://216284w73d.iok.la:31580/alipay.jpg',
-        wechat: 'http://216284w73d.iok.la:31580/wechatpay.jpg'
+        alipay: '/images/alipay.jpg',
+        wechat: '/images/wechatpay.jpg'
       },
       galleries: {
         enable: true
@@ -85,7 +85,7 @@
       },
       preview: {
         background: {
-          default: '/images/theme/welcome-image.jpg',
+          default: '/images/welcome-image.jpg',
           api: ''
         },
         motto: {
@@ -94,7 +94,7 @@
         },
       },
       qrcode: {
-        enable: true,
+        enable: false,
         type: 'image',
         image: 'https://pic.izhaoo.com/weapp-code.jpg',
       },
@@ -185,7 +185,7 @@
         
           <section class="donate">
   <div id="qrcode-donate">
-    <img   class="lazyload" data-original="http://216284w73d.iok.la:31580/alipay.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" >
+    <img   class="lazyload" data-original="/images/alipay.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" >
   </div>
   <div class="icon">
     <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
@@ -292,10 +292,6 @@
 
 
 
-
-
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 
 
 

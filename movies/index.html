@@ -63,12 +63,12 @@
       lazyload: {
         enable: true,
         only_post: 'false',
-        loading: 'http://216284w73d.iok.la:31580/loading.gif'
+        loading: '/images/loading.gif'
       },
       donate: {
         enable: true,
-        alipay: 'http://216284w73d.iok.la:31580/alipay.jpg',
-        wechat: 'http://216284w73d.iok.la:31580/wechatpay.jpg'
+        alipay: '/images/alipay.jpg',
+        wechat: '/images/wechatpay.jpg'
       },
       galleries: {
         enable: true
@@ -85,7 +85,7 @@
       },
       preview: {
         background: {
-          default: '/images/theme/welcome-image.jpg',
+          default: '/images/welcome-image.jpg',
           api: ''
         },
         motto: {
@@ -94,7 +94,7 @@
         },
       },
       qrcode: {
-        enable: true,
+        enable: false,
         type: 'image',
         image: 'https://pic.izhaoo.com/weapp-code.jpg',
       },
@@ -120,8 +120,6 @@
   <nav class="navbar">
     <div class="left">
       
-        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
-      
       
         <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
       
@@ -130,8 +128,6 @@
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
-    
-      <div id="qrcode-navbar"></div>
     
   </nav>
 
@@ -176,7 +172,7 @@
       
         
         <a href="./信条" class="item">
-          <img   class="lazyload" data-original="http://216284w73d.iok.la:31580/movies/telnet.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="信条">
+          <img   class="lazyload" data-original="/images/movies/telnet.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="信条">
           <div class="title-wrap">
             <div class="mask">
               <h3 class="title">信条</h3>
@@ -186,7 +182,7 @@
       
         
         <a href="./盗梦空间" class="item">
-          <img   class="lazyload" data-original="http://216284w73d.iok.la:31580/movies/inception.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="盗梦空间">
+          <img   class="lazyload" data-original="/images/movies/inception.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="盗梦空间">
           <div class="title-wrap">
             <div class="mask">
               <h3 class="title">盗梦空间</h3>
@@ -277,10 +273,6 @@
 
 
 
-
-
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 
 
 
