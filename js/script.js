@@ -1,6 +1,18 @@
-const cheerio = require('cheerio');
-
 console.log("%c Github %c", "background:#333333; color:#ffffff", "", "https://github.com/izhaoo/hexo-theme-zhaoo");
+
+function decoder(str) {
+  var tempArr = str.split(/\&#|\;/);
+  console.log(tempArr);
+  var tmpLength = tempArr.length;
+  var str = "";
+  for (var i = 0; i < tmpLength; i++) {
+    if (tempArr[i] != "") {
+      str += String.fromCharCode(tempArr[i]);
+    }
+
+  }
+  return str;
+}
 
 (function ($) {
   "use strict";
@@ -237,6 +249,7 @@ console.log("%c Github %c", "background:#333333; color:#ffffff", "", "https://gi
         $("#qrcode-navbar").append('<img src="' + CONFIG.qrcode.image + '" alt="qrcode" />');
       }
     },
+    
     toc: function () {
       var current = [];
       var titleList = new Map();
@@ -255,7 +268,7 @@ console.log("%c Github %c", "background:#333333; color:#ffffff", "", "https://gi
           }
         }
         $(".toc-link").removeClass("active");
-        $(".toc-link[href='#" + cheerio.load(current[1]) + "']").addClass("active");
+        $(".toc-link[href='#" + current[1] + "']").addClass("active");
       };
       f();
     },
